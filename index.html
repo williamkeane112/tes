@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- logo -->
+      <img src="CIII.jpeg" width="50px" alt="" />
+      <!-- menu -->
+      <div class="nav-menu">
+        <a href="">NOW PLAYING </a>
+        <a href="">COMING SOON </a>
+        <a href="">SNACKS & DRINKS</a>
+        <a href="">THEATER</a>
+        <div class="btn">
+          <button class="btn-login"><a href="#">LOGIN</a></button>
+        </div>
+      </div>
+      <!-- button Login dan Search -->
+      <div class="navbar-extra">
+        <div class="btn-search">
+          <img class="search-icon" src="Search.png" width="50px" height="30px" alt="" />
+          <input type="search" placeholder="Search theater, movies" />
+        </div>
+        <div class="sidebar">
+          <a href="#" id="ham-menu"><i data-feather="menu"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

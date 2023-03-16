@@ -1,0 +1,138 @@
+* {
+    margin: auto;
+    padding: 0;
+  }
+  .navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 18px 2%;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .navbar .nav-menu a {
+    color: #f4d466;
+    margin: 0 22.4px;
+    text-decoration: none;
+    font-family: "Baumans", cursive;
+  }
+  .navbar .nav-menu {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar img {
+    position: absolute;
+  }
+  .btn .btn-login {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    background-color: #0094ff;
+    border-radius: 40px;
+    border: 1px solid #0094ff;
+  }
+  .btn {
+    margin-left: 160px;
+  }
+  .btn .btn-login a {
+    color: white;
+    font-family: "Baumans", cursive;
+    text-decoration: none;
+  }
+  .navbar-extra {
+    display: flex;
+    align-items: center;
+  }
+  .btn-search {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    margin-right: 50px;
+  }
+  .btn-search input {
+    margin-right: 50px;
+    width: 150px;
+    height: 30px;
+    font-size: 11px;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+  }
+  .btn-search .search-icon {
+    position: relative;
+    margin-left: 10px;
+  }
+  .sidebar a {
+    color: #f4d466;
+    display: none;
+  }
+  /* media  queries */
+  
+  /* laptop */
+  @media (max-width: 1366px) {
+    html {
+      font-size: 90%;
+    }
+  }
+  /* tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 55%;
+    }
+  
+    #ham-menu {
+      display: inline-block;
+    }
+    .navbar .nav-menu {
+      position: absolute;
+      width: 350px;
+      height: 100vh;
+      top: -100%;
+      right: -100%;
+      background-color: black;
+      display: block;
+      transition: 0.4s;
+    }
+    
+    .navbar .nav-menu.active {
+      top: 75px;
+      right: 0%;
+    }
+    .navbar .nav-menu a {
+      display: block;
+      margin: 26px;
+      padding: 8px;
+      font-size: 20px;
+    }
+    .btn .btn-login {
+      display: flex;
+      align-items: center;
+      left: -80px;
+      position: relative;
+    }
+    .btn .btn-login a {
+      margin-left: 14px;
+    }
+    .btn-search{
+      left: 30px;
+    }
+    .navbar-extra {
+      margin-left: 430px;
+    }
+  }
+  /* hp */
+  @media (max-width: 450px) {
+    html {
+      font-size: 40%;
+    }
+    .navbar-extra {
+      margin-left: 110px;
+    }
+  }
+  
